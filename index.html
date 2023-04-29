@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/baa4278365.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>STUDENT</p>
+                <h1>Hello, I'm <br><span>Falguni</span> Rakhecha</h1>
+            </div>
+        </div>
+    </div>
+    <!--------------ABOUT---------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/a1.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Second year student at SRMIST. Currently studying Computer Science Engineering. Interested in learning and exploring new technologies. Proficient with Python, MySql, C++, C, HTML with few other languages. Skilled at Figma and web designing. Aiming to become a skilled Software Engineer. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>  
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python</span><br>Sqlite3, tkinter, sympy, pyDatalog, functools, automata.fa.dfa, Structures.</li>
+                            <li><span>MySql</span><br>certified SQL(basics) by HackerRank and Sololearn.</li>
+                            <li><span>Figma</span><br>certified in graphic designing by Younity.in</li>
+                            <li><span>Machine learning</span><br>certified by AWS Academy in Machine learning Founations.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Volunteer</span><br>SRM Alumni Affairs</li>
+                            <li><span>Campus Ambassador</span><br>At International Modal United Nations Association</li>
+                            <div class="social-icons">
+                                <a href="https://www.hackerrank.com/RA2111003011557?hr_r=1"><i class="fa-brands fa-hackerrank"></i></a>
+                                <a href="https://leetcode.com/falguni1/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAACHElEQVR4nK2Vu84xQRjH1/kYh4hCoRN3oBDJRiIqoUSwIiIUxA0oNERU1EQcYjU6LkCzNEqHdVjX8nyZTd7NbPZ97fii+De7z/z+M89hhnq9XvCJns8nMAwDNpsNer2eajz1KTydTgNFUaLC4fD3DARBgGw2K8FNJhOwLPsdA0EQoFAoSHCDwQCj0YhoYxQJPJ/PS3CkwWBAnFZKDc4wjAyOZLfboV6vw+Px+H8DBC8Wiwo4rmg0CjzPf26A4KVSSQaLxWLQbDYhlUqBTqeTfb/dbp8ZlMtlCaDVahX9Pp/PwWKxSDHxePzPdCkMKpWKtFCj0UCn0/l14Wq1AqvVKsVOJhN1A1Q4HN5ut9/md71eg8vlAo/HA/v9/r0BOjae81arRdSGPM/D/X5XrwHqiB94o9Eg7vMXaZuioyK42+1WFIxlWXA4HG9b9keow9B9pTBA448CgsGgYhe1Wo0Ijg+iwsDv94s/jUYjHA4HmQHHcZBMJiESiaiKpmkYDodKA3xqQ6EQnE6n79aA4zhwOp2yu/58PqsCxuMxTKdTsklGw4NPKDry5XL5czE+N2gmVA2QlsulzISmabher4qF1WpVdp1st1syA6TFYgFms1lmcjwexX8obblcTgbv9/tkKcI1m83EZ5HCnshAICA+9vh10u12yYr8m1DxcCAuvV6vClc1QNrtdpDJZMDn84lT6vV6IZFIwGazIWrTfwDKbu9Foen6AAAAAElFTkSuQmCC"></a>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Sep 2021</span><br>Graphic designing certified course</li>
+                            <li><span>2021-2025</span><br>B-Tech from SRM University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-----------portfolio------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work" >
+                <img src="images/work.png">
+                <div class="layer">
+                    <h3>Software Engineering Job Platform</h3>
+                    <p>A web based application which helps IT professionals to find their desired job.</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+<!-----------------contact--------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="Contact-me">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>fr0452@srmist.edu.in</p>
+                <p><i class="fa-solid fa-square-phone"></i>9307463982</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/falguni-rakhecha-291399224/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/FalguniRakhecha"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Resume-2.pdf" Download class="btn btn2">Download CV</a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Falguni Rakhecha.</p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
